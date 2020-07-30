@@ -2,33 +2,384 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Abdelkhalek Boutahri</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+<style type="text/css">
+  
 
-  </style>
+body{
+    background-color: hsl(270, 20%, 96%); 
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+display: flex;
+
+}
+.container1{
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    height: 650px;
+    width: 400px;
+    border-bottom-left-radius: 200px ;
+    border-bottom-right-radius: 200px ;
+    position: absolute;
+    left: -12%;
+    
+    
+}
+h1{
+    position: absolute;
+    right: 405px;
+    top: 30%;
+    color:hsl(271, 36%, 24%);
+}
+
+@media screen and (max-width: 700px) {
+    .simple{
+       left: 70px;
+        font-size: 30px;
+        top: 700px;
+        z-index: 10;
+        width: 300px;
+    }
+ }
+ @media screen and (max-width: 1025px) {
+    .simple{
+     right: 280px;
+    }
+ }
+ @media screen and (max-width: 768px) {
+    .simple{
+     right: 150px;
+    }
+ }
+ 
+p{
+    position: absolute;
+    left: 50%;
+    right: 10%;
+    top: 40%;
+    color: hsl(270, 7%, 64%);
+    line-height: 28px;
+    font-size: 16px;
+}
+@media screen and (max-width: 700px) {
+   
+   .write{
+       position: absolute;
+       top: 800px;
+       left: 0px;
+       font-size: 14px;
+       text-align: center;
+       overflow: hidden;
+       z-index: 7;
+       width: 100%;
+       margin-bottom: 50px;
+   }
+}
+
+.container2{
+    position: relative;
+    background-color:   hsl(0, 0%, 100%);
+    width: 250px;
+    left: 13%;
+    top: 150px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 2px hsl(267, 17%, 90%);
+}
+.container3{
+    background-image: linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    height: 80px;
+    width: 227px;
+    left: 12px;
+    top: -8px;
+    border-radius: 5px;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;
+    z-index: 1;
+    
+}
+.container4{
+    background-color:  hsl(0, 0%, 100%);
+    height: 20px;
+    width: 120px;
+    top: -12px;
+    left: 65px;
+    border-radius: 7px;
+    z-index: 4;
+
+}
+.container6{
+    color:  hsl(0, 0%, 100%);
+    font-weight: bolder;
+    font-size: 23px;
+    top: 27px;
+    left: 22px;
+    z-index: 4;
+}
+.man{
+    border-radius: 100px;
+    width: 26px;
+    position: relative;
+    left: 17%;
+    border: 2px solid hsl(0, 0%, 100%);
+    top: 10%;
+    z-index: 4;
+}
+.sam{
+    top: 5%;
+    left: 33%;
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    font-size: 80%;
+    z-index: 4;
+}
+.ava{
+    top: 9%;
+    left: 33%;
+    color:  hsl(293, 100%, 63%);
+    font-size: 60%;
+    z-index: 4;
+}
+.dots{
+    color: hsl(0, 0%, 100%);
+    line-height: 3px;
+    top: 8%;
+    left: 90%;
+    z-index: 4;
+}
+.appcon{
+    background-color: hsl(270, 20%, 96%);
+    height: 400px;
+    top: 15%;
+    left: 12px;
+    width: 227px;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    z-index: 0;
+}
+.left1{
+    color: hsl(276, 55%, 52%);
+    left: 20px;
+    padding-right: 14px;
+    padding-left: 4px;
+    width: 120px;
+    padding: 4px;
+    font-size: 9px;
+    line-height: 10px;
+    top: 90px;
+    background-color: hsl(270, 3%, 86%);
+    z-index: 1;
+    border-radius: 5px;
+}
+.left2{
+    color: hsl(276, 55%, 52%);
+    left: 20px;
+    padding-right: 14px;
+    padding-left: 4px;
+    width: 120px;
+    padding: 6px;
+    font-size: 9px;
+    line-height: 10px;
+    top: 123px;
+    background-color: hsl(270, 3%, 86%);
+    z-index: 1;
+    border-radius: 5px;
+}
+.left3{
+    display: flex;
+    left: 90px;
+    top: 155px;
+}
+.dog{
+    width: 40px;
+    border-radius: 15px;
+    padding: 4px;
+}
+.right1{
+    color: hsl(271, 15%, 43%);
+    left: 92px;
+    padding-right: 14px;
+    padding-left: 4px;
+    width: 125px;
+    padding: 7px;
+    font-size: 9px;
+    line-height: 10px;
+    top: 220px;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    border-radius: 5px;
+}
+.right2{
+    color: hsl(271, 15%, 43%);
+    left: 141px;
+    padding-right: 14px;
+    padding-left: 4px;
+    width: 75px;
+    padding: 7px;
+    font-size: 9px;
+    line-height: 10px;
+    top: 262px;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    border-radius: 5px;
+} 
+
+.left4{
+    color: hsl(276, 55%, 52%);
+    left: 20px;
+    padding-right: 14px;
+    padding-left: 4px;
+    width: 130px;
+    padding: 6px;
+    font-size: 9px;
+    line-height: 10px;
+    top: 300px;
+    background-color: hsl(270, 3%, 86%);
+    z-index: 1;
+    border-radius: 5px;
+} 
+.left5{
+    color: whitesmoke;
+    left: 20px;
+    padding-right: 14px;
+    padding-left: 4px;
+    width: 120px;
+    padding: 10px;
+    font-size: 9px;
+    line-height: 10px;
+    top: 350px;
+    background-image: linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    z-index: 1;
+    border-radius: 5px;
+    border-bottom-left-radius: 8px ;
+    border-bottom-right-radius: 10px ;
+    border-top-left-radius: 12px ;
+    border-top-right-radius: 10px ;
+} 
+.left6{
+    color: whitesmoke;
+    left: 20px;
+    padding-right: 20px;
+    padding-left: 4px;
+    width: 120px;
+    padding: 10px;
+    font-size: 9px;
+    line-height: 10px;
+    top: 388px;
+    background-image: linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    z-index: 1;
+    border-radius: 5px;
+    border-bottom-left-radius: 8px ;
+    border-bottom-right-radius: 10px ;
+    border-top-left-radius: 12px ;
+    border-top-right-radius: 10px ;
+}  
+#hour{
+    padding-left: 7%;
+}   
+#minute{
+    padding-left: 7%;
+}  
+.first{
+    padding-left: 30%;
+    font-size: 10px;
+}
+.second{
+    padding-left: 40%;
+    font-size: 10px;
+    
+}
+.box{
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(206, 6%, 79%);
+    z-index: 4;
+    top: 445px;
+    border-radius: 20px;
+    border: none;
+    width: 185px;
+    right: 20px;
+    padding: 13px;
+    font-size: 10px;
+    padding-right: px;
+}
+button{
+    position: absolute;
+    z-index: 4;
+    top: 450px;
+    right: 33px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color:  hsl(271, 36%, 24%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+.attribution { font-size: 11px; text-align: center;  margin-top: 9vw;}
+.attribution a { color: hsl(228, 45%, 44%); }
+</style>
 </head>
+
+
 <body>
 
-  
+    <div class="container">
+        <div class="container1">
+        </div>
+    <h1 class="simple">Simple booking</h1>
+        <p class="write">Stay in touch with our dog walkers through the
+            chat interface. This makes it easy to discuss arrangements
+                and make bookings. Once the walk has been completed you
+                can rate your walker and book again all through the chat.
+        </p>
+    </div>
+    <div class="container2">
+        <p class="container3">
+            <p class="container5">
+                <p class="container6"><</p>
+                <img src="img/avatar.jpg" class="man">
+                    <p class="sam">Abdelkhalek Boutahri</p>
+                    <p class="ava">Available to Walk</p>
+                    <p class="dots">
+                        .<br>
+                        .<br>
+                        .<br>
+                    </p>
+            <p class="container4"></p>
+            
+        </p>
+            <p class="appcon">
+                <p class="left1">That sounds great. I'd be<br> happy with that.</p>
+                <p class="left2">Could you send over some pictures of your dog, please?</p>
+                <p class="left3">
+                    <img src="img/dog-image-1.jpg" class="dog"><br>
+                    <img src="img/dog-image-2.jpg" class="dog"><br>
+                    <img src="img/dog-image-3.jpg" class="dog"><br>
+                </p>
+                <p class="right1">Here are a few pictures. She's <br>a happy girl!</p>
+                <p class="right2">Can you make it?</p>
+                <p class=left4>She looks so happy! The time<br> we discussed works. How<br> long shall I take her out for?</p>
+            <p class="left5" id="minute">30 minute walk <strong class="first">$29</strong></p>
+            <p class="left6" id="hour">1 hour walk <strong class="second">$49</strong> </p>
+            <input type="text" placeholder="Type a message..." class="box">
+            <button>></button>
+            </p>
+    </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Abdelkhalek BOUTAHRI</a>.
   </div>
-      <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+
 
 </body>
 </html>
